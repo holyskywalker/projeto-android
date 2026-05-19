@@ -1,0 +1,276 @@
+@font-face {
+    font-family: 'IDroid';
+    src: url(fontes/idroid.otf) format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+    --cordestaque: #43946e;
+    --fundo1: #f5ebca;
+    --cor1gradiente: #3bc776;
+    --cor2gradiente: #1b5734;
+    --cor1: #2bc56b;
+    --corasideextra: #38915d;
+
+    --fontepadrao: Georgia, 'Times New Roman', Times, serif;
+    --fonteandroid: 'IDroid', monospace;
+    --fonteimportante: "Space Grotesk", sans-serif; 
+}
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--fundo1);
+    font: normal 1em var(--fontepadrao);
+}
+
+img {
+    width: 100%;
+}
+
+main a:after {
+    content: "\1F517";
+}
+
+
+
+
+
+/* HEADER */
+header {
+    background-image: linear-gradient(to bottom, var(--cor1gradiente), var(--cor2gradiente));
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: 0px;
+    box-shadow: 0px 1px 8px 5px rgba(0, 0, 0, 0.39);
+}
+
+header > h1 {
+    margin-top: 0px;
+    padding-top: 15px;
+    padding-right: 20px; /* pra responsividade */
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.568);
+    padding-left: 20px; /* pra responsividade */
+}
+
+header > p {
+    max-width: 550px;
+    margin: auto;
+    padding-right: 20px; /* pra responsividade */
+    padding-left: 20px; /* pra responsividade */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.678);
+}
+
+h1#text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* HEADER */
+
+
+
+/* NAV */
+nav {
+    margin-top: 30px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 1em;
+    margin: 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: var(--fonteimportante);
+    transition-duration: 0.5s;
+}
+
+nav > a:visited {
+    color: white;
+}
+
+nav > a:hover {
+    background-color: var(--cor1);
+    color: var(--cor2gradiente)
+}
+
+nav > a:active {
+    color: white;
+}
+/* NAV */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN */
+main {
+    min-width: 320px;
+    max-width: 800px;
+    padding: 15px;
+    border-radius: 0px 0px 10px 10px;
+    margin: auto;
+    text-indent: 15px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.39);
+    
+    background-color: white;
+}
+
+main h1 {
+  margin-top: 0;
+}
+
+main p {
+    text-indent: 30px;
+    line-height: 1.8em;
+    margin: 0px 15px;
+    text-align: justify;
+}
+
+.tema1 img#droid {
+    display: block;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+section#youtube {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: -15px;
+    background-color: var(--corasideextra);
+    text-align: center;
+    position: relative;
+    padding: 5px;
+    padding-bottom: 50%;
+}
+
+section#youtube > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+/* MAIN */
+
+
+
+
+
+
+
+
+
+
+
+/* ASIDE */
+aside#extra {
+    background-color: rgb(174, 243, 207);
+    margin: 30px 0px 0px 0px;
+    border-radius: 10px;
+}
+
+aside#extra h2 {
+    background-color: var(--corasideextra);
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin: 0;
+}
+
+aside#extra ul {
+    display: inline-block;
+    text-align: left;
+    padding-right: 180px;
+    list-style-type: "✔ ";
+}
+
+aside#extra p {
+    padding: 5px 5px 2px 5px;
+    text-indent: 25px;
+}
+/* ASIDE */
+
+
+
+
+
+
+
+
+/* FOOTER */
+div#alert {
+    background-color: var(--cor2gradiente);
+    text-align: center;
+    color: white;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+div#alert p {
+    margin: 0;
+}
+
+div#alert a {
+    color: white;
+    text-decoration: none;
+}
+
+div#alert a:visited {
+    color: white;
+}
+
+div#alert a:active {
+    color: var(--cor1);
+}
+
+div#alert a:hover {
+    color: var(--cor1);
+    text-decoration: none;
+}
+/* FOOTER */
+
+
+
+
+
+
+
+
+
+
+/* ADICIONAIS */
+.dstq1 {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: normal;
+    background-color: var(--cordestaque);
+    padding: 1px;
+}
+
+.t1 {
+    font: bold 1.45em var(--fonteandroid);
+    color: rgb(0, 104, 52);
+    background-image: linear-gradient(to right, var(--cor1), rgba(255, 255, 255, 0));
+    margin-top: 15px;
+}
+/* ADICIONAIS */
